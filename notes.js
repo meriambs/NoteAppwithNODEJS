@@ -39,11 +39,22 @@ console.log(notess);
         title,
         body,
    };
-
-   notess.push(note);
+   var duplicate=notess.filter((el)=>
+      el.title === title);
+   
+   if(duplicate.length === 0){
+ notess.push(note);
    
      fs.writeFileSync("notes.txt",JSON.stringify(notess) );
      logNote(note);
+   } else {
+       console.log(' Stop u have it ');
+   }
+
+//    notess.push(note);
+   
+//      fs.writeFileSync("notes.txt",JSON.stringify(notess) );
+//      logNote(note);
  }
 
  var removeNote=(title)=>{
