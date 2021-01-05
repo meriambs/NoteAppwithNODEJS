@@ -1,0 +1,14 @@
+{
+  "name": "js-note-app",
+  "version": "1.0.0",
+  "description": "testing something new",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mbs",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^16.2.0"
+  }
+}
